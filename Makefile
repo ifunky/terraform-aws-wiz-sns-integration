@@ -2,6 +2,7 @@
 
 METADATA_DOCS_FILE := "docs/metadata.md"
 TARGETS_DOCS_FILE  := "docs/targets.md"
+WIZ_POLICY = "Wiz policy"
 
 export README_INCLUDES ?= $(file://$(shell pwd)/?type=text/plain)
 
@@ -11,7 +12,6 @@ define polydev
 		-v "$$PWD:/data" \
 		ifunky/polydev:latest $1
 endef
-
 
 
 #####################################################################
@@ -44,7 +44,7 @@ wizauth: ## WizCli authentication
 	@wizcli auth --id $(WIZ_CLIENT_ID) --secret $(WIZ_CLIENT_SECRET)
 
 wizscan: wizauth ## Scan code
-	@wizcli iac scan --path .
+	@wizcli iac scan --path . --profile $(WIZ_POLICY)
 
 #####################################################################
 # Public targets designed to be run directly from the command line
