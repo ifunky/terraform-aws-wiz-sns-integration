@@ -19,4 +19,4 @@ jobs:
           command: make validate
       - run:
           name: Security Scan
-          command: make wizscan WIZ_CLIENT_ID=${WIZCLI_ID} WIZ_CLIENT_SECRET=${WIZCLI_SECRET} WIZ_POLICY=" PARAMETERS.POLICY "
+          command: make wizscan WIZ_CLIENT_ID=${WIZCLI_ID} WIZ_CLIENT_SECRET=${WIZCLI_SECRET} WIZ_POLICY="<< pipeline.parameters.policy >>"
