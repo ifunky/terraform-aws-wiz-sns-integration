@@ -7,6 +7,10 @@ jobs:
           AWS_DEFAULT_REGION: eu-west-1 
     
     working_directory: ~/terraform
+    parameters:
+        policy:
+          type: string
+          default: "Default IaC policy"
     steps:
       - checkout:
           path: ~/terraform
@@ -15,4 +19,4 @@ jobs:
           command: make validate
       - run:
           name: Security Scan
-          command: make wizscan WIZ_CLIENT_ID=${WIZCLI_ID} WIZ_CLIENT_SECRET=${WIZCLI_SECRET}
+          command: make wizscan WIZ_CLIENT_ID=${WIZCLI_ID} WIZ_CLIENT_SECRET=${WIZCLI_SECRET} WIZ_POLICY=" PARAMETERS.POLICY "
