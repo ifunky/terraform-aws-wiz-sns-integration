@@ -15,4 +15,4 @@ jobs:
           command: make validate
       - run:
           name: Security Scan
-          command: echo ID:${wiz_client_id};make wizscan wiz_client_id=${wiz_client_id} wiz_client_secret=${wiz_client_secret}
+          command: make wizscan WIZ_CLIENT_ID=${WIZCLI_ID} WIZ_CLIENT_SECRET=${WIZCLI_SECRET}
