@@ -12,15 +12,15 @@ Wiz allows you to send Issues directly to an SNS topic in AWS which you can then
 - Creates a non public bucket for the Terraform state.  The full bucket name is built by concatenating namespace, environment and bucket name
 - Creates an S3 default policy with restricted permissions
 
- ## Features
+## Features
 
- ### SNS Topic
+### SNS Topic
 
- - Creates an AWS SNS topic that can be used within Wiz actions
- - Creates a subscription to a Lambda function
+- Creates an AWS SNS topic that can be used within Wiz actions
+- Creates a subscription to a Lambda function
 
- ### IAM Role
- - An IAM role is created with the correct permissions for use within Wiz restricted by an external ID
+### IAM Role
+- An IAM role is created with the correct permissions for use within Wiz restricted by an external ID
 
 
 
@@ -46,7 +46,10 @@ polydev/createdocs             Run PolyDev createdocs directly from your shell
 polydev/help                   Help on using PolyDev locally
 polydev/init                   Initialise the project
 polydev/validate               Validate the code
+polydev/wizscan                Security validation
 polydev                        Run PolyDev interactive shell to start developing with all the tools or run AWS CLI commands :-)
+wizauth                        WizCli authentication
+wizscan                        Scan code
 ```
 # Module Specifics
 
