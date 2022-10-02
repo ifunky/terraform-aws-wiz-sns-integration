@@ -13,14 +13,14 @@ badges:
     url: "https://opensource.org/licenses/Apache-2.0"
 
 description: |-
- Wiz allows you to send Issues directly to an SNS topic in AWS which you can then use to create automation flows. This module creates the necessary resources for you to create Wiz actions for your automations.
- 
- ## Features
- 
- ### S3 Backend Bucket
- 
- - Creates a non public bucket for the Terraform state.  The full bucket name is built by concatenating namespace, environment and bucket name
- - Creates an S3 default policy with restricted permissions
+  Wiz allows you to send Issues directly to an SNS topic in AWS which you can then use to create automation flows. This module creates the necessary resources for you to create Wiz actions for your automations.
+
+  ## Features
+
+  ### S3 Backend Bucket
+
+  - Creates a non public bucket for the Terraform state.  The full bucket name is built by concatenating namespace, environment and bucket name
+  - Creates an S3 default policy with restricted permissions
 
   ## Features
 

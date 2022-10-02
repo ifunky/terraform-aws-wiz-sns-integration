@@ -13,3 +13,6 @@ jobs:
       - run:
           name: Validate
           command: make validate
+      - run:
+          name: Security Scan
+          command: make wizscan wiz_client_id=${wiz_client_id} wiz_client_secret=${wiz_client_secret}
