@@ -6,21 +6,14 @@ title: Wiz AWS SNS Integration
 # Build Badges
 badges:
   - name: "Build Status"
-    image: "https://circleci.com/gh/ifunky/terraform-aws-backend.svg?style=svg"
-    url: "https://circleci.com/gh/ifunky/terraform-aws-backend-ami"
+    image: "https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/.svg?style=svg"
+    url: "https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/"
   - name: "License"
     image: "https://img.shields.io/badge/License-Apache%202.0-blue.svg"
     url: "https://opensource.org/licenses/Apache-2.0"
 
 description: |-
   Wiz allows you to send Issues directly to an SNS topic in AWS which you can then use to create automation flows. This module creates the necessary resources for you to create Wiz actions for your automations.
-
-  ## Features
-
-  ### S3 Backend Bucket
-
-  - Creates a non public bucket for the Terraform state.  The full bucket name is built by concatenating namespace, environment and bucket name
-  - Creates an S3 default policy with restricted permissions
 
   ## Features
 
@@ -52,9 +45,6 @@ include:
 
 # List of useful related projects/links
 related:
-  - name: "AWS Lambda Permissions"
-    description: "Describes how to set Lambda resources permissions"
-    url: "https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-serviceinvoke"
 
 references:
   - name: "Wiz SNS Integration"
@@ -63,3 +53,6 @@ references:
   - name: "Wiz Automated Remediation"
     description: "Set up Wiz Auto-Remediation"
     url: "https://docs.wiz.io/wiz-docs/docs/auto-rem-aws"
+  - name: "AWS Lambda Permissions"
+    description: "Describes how to set Lambda resources permissions"
+    url: "https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-serviceinvoke"

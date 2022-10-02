@@ -1,16 +1,9 @@
 
 
 # terraform-aws-wiz-sns-integration
- [![Build Status](https://circleci.com/gh/ifunky/terraform-aws-backend.svg?style=svg)](https://circleci.com/gh/ifunky/terraform-aws-backend-ami) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+ [![Build Status](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/.svg?style=svg)](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Wiz allows you to send Issues directly to an SNS topic in AWS which you can then use to create automation flows. This module creates the necessary resources for you to create Wiz actions for your automations.
-
-## Features
-
-### S3 Backend Bucket
-
-- Creates a non public bucket for the Terraform state.  The full bucket name is built by concatenating namespace, environment and bucket name
-- Creates an S3 default policy with restricted permissions
 
 ## Features
 
@@ -90,7 +83,6 @@ Provider Requirements:
 
 Here are some useful related projects.
 
-- [AWS Lambda Permissions](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-serviceinvoke) - Describes how to set Lambda resources permissions
 
 
 
@@ -102,4 +94,5 @@ For more information please see the following links of interest:
 
 - [Wiz SNS Integration](https://docs.wiz.io/wiz-docs/docs/sns-integration) - How to integrate with SNS
 - [Wiz Automated Remediation](https://docs.wiz.io/wiz-docs/docs/auto-rem-aws) - Set up Wiz Auto-Remediation
+- [AWS Lambda Permissions](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-serviceinvoke) - Describes how to set Lambda resources permissions
 

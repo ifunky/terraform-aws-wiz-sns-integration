@@ -41,7 +41,7 @@ createdocs: createdocs/targets # Auto create README.md documentaion
 	--out README.md
 
 wizauth: ## WizCli authentication
-	@wizcli auth --id $(wiz_client_id) --secret $(wiz_client_secret)
+	@wizcli auth --id $(WIZ_CLIENT_ID) --secret $(WIZ_CLIENT_SECRET)
 
 wizscan: wizauth ## Scan code
 	@wizcli iac scan --path .
@@ -84,4 +84,4 @@ polydev/validate: ## Validate the code
 	$(call polydev,make validate)
 
 polydev/wizscan: ## Security validation
-	$(call polydev,make wizscan wiz_client_id=$(wiz_client_id) wiz_client_secret=$(wiz_client_secret)) 
+	$(call polydev,make wizscan wiz_client_id=$(WIZ_CLIENT_ID) wiz_client_secret=$(WIZ_CLIENT_SECRET)) 
