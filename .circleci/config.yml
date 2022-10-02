@@ -1,8 +1,8 @@
 version: 2
 parameters:
-    policy:
-      type: string
-      default: "Default IaC policy"
+  policy:
+    type: string
+    default: "Default IaC policy"
 
 jobs:
   build:
