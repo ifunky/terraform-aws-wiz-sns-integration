@@ -44,7 +44,7 @@ wizauth: ## WizCli authentication
 	@wizcli auth --id $(WIZ_CLIENT_ID) --secret $(WIZ_CLIENT_SECRET)
 
 wizscan: wizauth ## Scan code
-	@wizcli iac scan --path . --policy "$(WIZ_POLICY)"
+	@wizcli iac scan --path . --policy $(WIZ_POLICY)
 
 #####################################################################
 # Public targets designed to be run directly from the command line
@@ -84,4 +84,4 @@ polydev/validate: ## Validate the code
 	$(call polydev,make validate)
 
 polydev/wizscan: ## Security validation
-	$(call polydev,make wizscan wiz_client_id=$(WIZ_CLIENT_ID) wiz_client_secret=$(WIZ_CLIENT_SECRET)) 
+	$(call polydev,make wizscan WIZ_CLIENT_ID=$(WIZ_CLIENT_ID) WIZ_CLIENT_SECRET=$(WIZ_CLIENT_SECRET) WIZ_POLICY="Default IaC policy"
