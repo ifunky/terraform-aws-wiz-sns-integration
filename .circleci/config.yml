@@ -1,4 +1,9 @@
 version: 2
+parameters:
+    policy:
+      type: string
+      default: "Default IaC policy"
+
 jobs:
   build:
     docker:
@@ -7,10 +12,6 @@ jobs:
           AWS_DEFAULT_REGION: eu-west-1 
     
     working_directory: ~/terraform
-    parameters:
-        policy:
-          type: string
-          default: "Default IaC policy"
     steps:
       - checkout:
           path: ~/terraform

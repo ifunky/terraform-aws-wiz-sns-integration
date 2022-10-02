@@ -1,7 +1,7 @@
 
 
 # terraform-aws-wiz-sns-integration
- [![Build Status](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration.svg?style=svg)](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+ [![Build Status](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration.svg?style=svg)](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/) [![Wiz](https://img.shields.io/badge/Wiz%20Security-CIS-green)](https://www.wiz.io/solutions/iac) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Wiz allows you to send Issues directly to an SNS topic in AWS which you can then use to create automation flows. This module creates the necessary resources for you to create Wiz actions for your automations.
 
