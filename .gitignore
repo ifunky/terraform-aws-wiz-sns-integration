@@ -9,6 +9,7 @@
 # Directories
 .terraform/
 .vagrant/
+.terraform.lock.hcl
 testresults/
 buildOutput/
 
