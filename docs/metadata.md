@@ -14,7 +14,7 @@ Provider Requirements:
 * `wiz_account_id` (default `"197171649850"`): Wiz account ID that is allowed to assume the role
 
 ## Output Values
-* `sns_topic`
+* `sns_topic`: ARN of the SNS topic created
 
 ## Managed Resources
 * `aws_iam_policy.aws_iam_policy` from `aws`

@@ -1,7 +1,7 @@
 
 
 # terraform-aws-wiz-sns-integration
- [![Build Status](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration.svg?style=svg)](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/) [![Wiz](https://img.shields.io/badge/Wiz%20Security-CIS-green)](https://www.wiz.io/solutions/iac) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+ [![Build Status](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration.svg?style=svg)](https://circleci.com/gh/ifunky/terraform-aws-wiz-sns-integration/) [![Wiz](https://img.shields.io/badge/Wiz%20Security-CIS%201.5.0-green)](https://www.wiz.io/solutions/iac) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Wiz allows you to send Issues directly to an SNS topic in AWS which you can then use to create automation flows. This module creates the necessary resources for you to create Wiz actions for your automations.
 
@@ -20,7 +20,7 @@ Wiz allows you to send Issues directly to an SNS topic in AWS which you can then
 ## Usage
 ```hcl
 module "wiz_sns_integration" {
-    source = "git::https://github.com/ifunky/terraform-aws-wiz-sns-integration.git?ref=master"
+    source = "git::https://github.com/ifunky/terraform-aws-wiz-sns-integration.git?ref=main"
 
     external_id       = "12345678-f15b-46f0-aa77-d928f254abcd"
     lambda_target_arn = "arn:aws:lambda:us-east-1:123456789012:function:your-function"
@@ -28,6 +28,7 @@ module "wiz_sns_integration" {
 }  
 
 ```
+> NOTE: For ease of maintenance the above example uses the `main` branch but we recommend using a version number in your production code
 
 
 ## Makefile Targets
@@ -60,7 +61,7 @@ Provider Requirements:
 * `wiz_account_id` (default `"197171649850"`): Wiz account ID that is allowed to assume the role
 
 ## Output Values
-* `sns_topic`
+* `sns_topic`: ARN of the SNS topic created
 
 ## Managed Resources
 * `aws_iam_policy.aws_iam_policy` from `aws`
@@ -94,5 +95,5 @@ For more information please see the following links of interest:
 
 - [Wiz SNS Integration](https://docs.wiz.io/wiz-docs/docs/sns-integration) - How to integrate with SNS
 - [Wiz Automated Remediation](https://docs.wiz.io/wiz-docs/docs/auto-rem-aws) - Set up Wiz Auto-Remediation
-- [AWS Lambda Permissions](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-serviceinvoke) - Describes how to set Lambda resources permissions
+- [AWS Lambda Permissions](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#permissions-resource-serviceinvoke) - Describes how to set Lambda resource permissions
 
