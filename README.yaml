@@ -51,6 +51,9 @@ include:
 
 # List of useful related projects/links
 related:
+  - name: "PolyDev"
+    description: "PolyDev repo and setup guide"
+    url: "https://github.com/ifunky/polydev"
 
 references:
   - name: "Wiz SNS Integration"

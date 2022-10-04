@@ -84,6 +84,7 @@ Provider Requirements:
 
 Here are some useful related projects.
 
+- [PolyDev](https://github.com/ifunky/polydev) - PolyDev repo and setup guide
 
 
 
