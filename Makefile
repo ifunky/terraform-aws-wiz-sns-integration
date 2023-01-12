@@ -15,7 +15,7 @@ endef
 
 
 #####################################################################
-# Private targets designed to be run within the PolyDev shell	
+# Private targets designed to be run within the PolyDev shell #	
 #####################################################################
 init: 
 	@terraform init -input=false
@@ -84,4 +84,4 @@ polydev/validate: ## Validate the code
 	$(call polydev,make validate)
 
 polydev/wizscan: ## Security validation
-	$(call polydev,make wizscan WIZ_CLIENT_ID=$(WIZ_CLIENT_ID) WIZ_CLIENT_SECRET=$(WIZ_CLIENT_SECRET) WIZ_POLICY="Default IaC policy"
+	$(call polydev,make wizscan WIZ_CLIENT_ID=$(WIZ_CLIENT_ID) WIZ_CLIENT_SECRET=$(WIZ_CLIENT_SECRET))
