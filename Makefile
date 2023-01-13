@@ -2,7 +2,7 @@
 
 METADATA_DOCS_FILE := "docs/metadata.md"
 TARGETS_DOCS_FILE  := "docs/targets.md"
-WIZ_POLICY = "Default IaC policy"
+WIZ_POLICY = "Default IaC policy,secrets"
 
 export README_INCLUDES ?= $(file://$(shell pwd)/?type=text/plain)
 
