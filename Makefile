@@ -15,7 +15,7 @@ endef
 
 
 #####################################################################
-# Private targets designed to be run within the PolyDev shell #	
+# Private targets designed to be run within the PolyDev shell
 #####################################################################
 init: 
 	@terraform init -input=false
