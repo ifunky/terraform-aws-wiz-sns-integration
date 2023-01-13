@@ -24,9 +24,3 @@ variable "wiz_account_id" {
     description = "Wiz account ID that is allowed to assume the role"
     default     = "197171649850"
 }
-
-variable "wiz_secreet" {
-    type        = string
-    description = "I'm a secret :-)"
-    default     = "AKIAIOSFODNN7EXAMPLE"
-}
